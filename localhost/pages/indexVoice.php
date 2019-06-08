@@ -1,5 +1,4 @@
-
-  <?php $title="Voice"; require("./shared/header.php"); ?>
+<?php $title="Voice"; require("./shared/header.php"); ?>
     <div class="container">
       <div class="row">
         <div class="col-sm-offset-3 col-sm-6">
