@@ -1,27 +1,27 @@
 <?php $title="Hakaton"; require("./shared/header.php"); ?>
     <div class="container content">
-			<p style="background-color: silver; font-size: 20px; border-radius: 5px; ">&nbsp;&nbsp;Недвижимость</p>
+			<p style="background-color: silver; font-size: 20px; border-radius: 5px; ">&nbsp;&nbsp;Кримінальне право</p>
 			<div class="col-md-12 products">
 					<div class="row">
 						<div class="col-sm-3">
 							<div class="product">
 								<div class="product-img">
-									<a href="#"><img src="../image/home.png" alt="Home"></a>
+									<a href="#"><img src="../image/zlochin.png" alt="Home"></a>
 								</div>
 								<p class="product-title">
-									<a href="#">Вопросы недвижимости</a>
+									<a href="#">Злочини</a>
 								</p>
-								<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+								<p class="product-desc">Протиправні дії проти громадянина</p>
 								<div class="btn-group dropup">
 									<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									  Подробнее
 									</button>
 									<br>
-									<div class="dropdown-menu">
-									  <a class="dropdown-item" href="#">Покупка</a>
-									  <a class="dropdown-item" href="#">Продажа</a>
-									  <a class="dropdown-item" href="#">Дарение</a>
-									  <a class="dropdown-item" href="#">Аренда</a>
+									<div style="margin-left: -25%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									  <a class="dropdown-item" href="#">Проти власності</a>
+									  <a class="dropdown-item" href="#">Проти довкілля</a>
+									  <a class="dropdown-item" href="#">Проти правосуддя</a>
+									  <a class="dropdown-item" href="#">Військові злочини</a>
 									</div>
 								</div>
 							</div>
@@ -29,45 +29,44 @@
 						<div class="col-sm-3">
 								<div class="product">
 										<div class="product-img">
-											<a href="#"><img src="../image/home.png" alt="Home"></a>
+											<a href="#"><img src="../image/home.png" alt="Home" style="width:100px;" ></a>
 										</div>
 										<p class="product-title">
-											<a href="#">Вопросы недвижимости</a>
+											<a href="#">Господарська діяльність</a>
 										</p>
-										<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+										<p class="product-desc">Злочини у сфері господарської діяльності</p>
 										<div class="btn-group dropup">
-												<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												  Подробнее
-												</button>
-												<br>
-												<div class="dropdown-menu">
-												  <a class="dropdown-item" href="#">Покупка</a>
-												  <a class="dropdown-item" href="#">Продажа</a>
-												  <a class="dropdown-item" href="#">Дарение</a>
-												  <a class="dropdown-item" href="#">Аренда</a>
-												</div>
-											</div>
+									<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									  Подробнее
+									</button>
+									<br>
+									<div style="margin-left: -35%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									  <a class="dropdown-item" href="#">Громадська безпека</a>
+									  <a class="dropdown-item" href="#">Безпека виробництва</a>
+									  <a class="dropdown-item" href="#">Безпека руху</a>
+									  <a class="dropdown-item" href="#">Громадський порядок</a>
+									</div>
+								</div>
 									</div>
 						</div>
 						<div class="col-sm-3">
 								<div class="product">
 										<div class="product-img">
-											<a href="#"><img src="../image/home.png" alt="Home"></a>
+											<a href="#"><img src="../image/free.png" alt="Home" style="width:100px;"></a>
 										</div>
 										<p class="product-title">
-											<a href="#">Вопросы недвижимости</a>
+											<a href="#">Звільнення від відповідальності</a>
 										</p>
-										<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+										<p class="product-desc">Звільнення від кримінальної відповідальності</p>
 										<div class="btn-group dropup">
 												<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												  Подробнее
 												</button>
 												<br>
-												<div class="dropdown-menu">
-												  <a class="dropdown-item" href="#">Покупка</a>
-												  <a class="dropdown-item" href="#">Продажа</a>
-												  <a class="dropdown-item" href="#">Дарение</a>
-												  <a class="dropdown-item" href="#">Аренда</a>
+												<div style="margin-left: -42%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Відбування покарання</a>
+												<a class="dropdown-item" href="#">Для неповнолітніх</a>
+												<a class="dropdown-item" href="#">Пом'якшуючи обставини</a>
 												</div>
 											</div>
 									</div>
@@ -75,51 +74,45 @@
 						   <div class="col-sm-3">
 								<div class="product">
 										<div class="product-img">
-											<a href="#"><img src="../image/home.png" alt="Home"></a>
+											<a href="#"><img src="../image/malii.png" alt="Home"></a>
 										</div>
 										<p class="product-title">
-											<a href="#">Вопросы недвижимости</a>
+											<a href="#">Неповнолітні</a>
 										</p>
-										<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+										<p class="product-desc">Відповідальності та покарання неповнолітніх</p>
 										<div class="btn-group dropup">
 												<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												  Подробнее
 												</button>
 												<br>
-												<div class="dropdown-menu">
-												  <a class="dropdown-item" href="#">Покупка</a>
-												  <a class="dropdown-item" href="#">Продажа</a>
-												  <a class="dropdown-item" href="#">Дарение</a>
-												  <a class="dropdown-item" href="#">Аренда</a>
-												</div>
+										
 											</div>
 									</div>
 						   </div>
 						</div>
 					</div>
 					<div class="container content">
-							<p style="background-color: silver; font-size: 20px; border-radius: 5px; ">&nbsp;&nbsp;Недвижимость</p>
+							<p style="background-color: silver; font-size: 20px; border-radius: 5px; ">&nbsp;&nbsp;Інше</p>
 							<div class="col-md-12 products">
 									<div class="row">
 										<div class="col-sm-3">
 											<div class="product">
 												<div class="product-img">
-													<a href="#"><img src="../image/home.png" alt="Home"></a>
+													<a href="#"><img src="../image/fy.png" alt="Home"></a>
 												</div>
 												<p class="product-title">
-													<a href="#">Вопросы недвижимости</a>
+													<a href="#">Шлюб</a>
 												</p>
-												<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+												<p class="product-desc">Питання укладення чи розірвання шлюбу</p>
 												<div class="btn-group dropup">
 														<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 														  Подробнее
 														</button>
 														<br>
-														<div class="dropdown-menu">
-														  <a class="dropdown-item" href="#">Покупка</a>
-														  <a class="dropdown-item" href="#">Продажа</a>
-														  <a class="dropdown-item" href="#">Дарение</a>
-														  <a class="dropdown-item" href="#">Аренда</a>
+														<div style="margin-left: -32%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+														  <a class="dropdown-item" href="#">Укладення</a>
+														  <a class="dropdown-item" href="#">Розірвання</a>
+														  <a class="dropdown-item" href="#">Визнання недійсним</a>
 														</div>
 													</div>
 										</div>
@@ -127,22 +120,20 @@
 										<div class="col-sm-3">
 												<div class="product">
 														<div class="product-img">
-															<a href="#"><img src="../image/home.png" alt="Home"></a>
+															<a href="#"><img src="../image/alimen.png" alt="Home"></a>
 														</div>
 														<p class="product-title">
-															<a href="#">Вопросы недвижимости</a>
+															<a href="#">Аліменти</a>
 														</p>
-														<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+														<p class="product-desc">Аліменти на дітей</p>
 														<div class="btn-group dropup">
 																<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 																  Подробнее
 																</button>
 																<br>
-																<div class="dropdown-menu">
-																  <a class="dropdown-item" href="#">Покупка</a>
-																  <a class="dropdown-item" href="#">Продажа</a>
-																  <a class="dropdown-item" href="#">Дарение</a>
-																  <a class="dropdown-item" href="#">Аренда</a>
+																<div style="margin-left: -10%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+																  <a class="dropdown-item" href="#">Неповнолітні</a>
+																  <a class="dropdown-item" href="#">Повнолітні</a>
 																</div>
 															</div>
 													</div>
@@ -150,22 +141,22 @@
 										<div class="col-sm-3">
 												<div class="product">
 														<div class="product-img">
-															<a href="#"><img src="../image/home.png" alt="Home"></a>
+															<a href="#"><img src="../image/work.png" alt="Home"></a>
 														</div>
 														<p class="product-title">
-															<a href="#">Вопросы недвижимости</a>
+															<a href="#">Трудове право</a>
 														</p>
-														<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+														<p class="product-desc">Питання трудового права для громадян</p>
 														<div class="btn-group dropup">
 																<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 																  Подробнее
 																</button>
 																<br>
-																<div class="dropdown-menu">
-																  <a class="dropdown-item" href="#">Покупка</a>
-																  <a class="dropdown-item" href="#">Продажа</a>
-																  <a class="dropdown-item" href="#">Дарение</a>
-																  <a class="dropdown-item" href="#">Аренда</a>
+																<div style="margin-left: -12%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+																  <a class="dropdown-item" href="#">Оплата праці</a>
+																  <a class="dropdown-item" href="#">Охорона праці</a>
+																  <a class="dropdown-item" href="#">Відпустка</a>
+																  <a class="dropdown-item" href="#">Відрядження</a>
 																</div>
 															</div>
 													</div>
@@ -173,22 +164,21 @@
 										   <div class="col-sm-3">
 												<div class="product">
 														<div class="product-img">
-															<a href="#"><img src="../image/home.png" alt="Home"></a>
+															<a href="#"><img src="../image/ded.png" alt="Home"></a>
 														</div>
 														<p class="product-title">
-															<a href="#">Вопросы недвижимости</a>
+															<a href="#">Пенсійне забезпечення</a>
 														</p>
-														<p class="product-desc">Продажа, покупка, аренда недвижимости</p>
+														<p class="product-desc">Пенсійне забезпечення громадян</p>
 														<div class="btn-group dropup">
 																<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 																  Подробнее
 																</button>
 																<br>
 																<div class="dropdown-menu">
-																  <a class="dropdown-item" href="#">Покупка</a>
-																  <a class="dropdown-item" href="#">Продажа</a>
-																  <a class="dropdown-item" href="#">Дарение</a>
-																  <a class="dropdown-item" href="#">Аренда</a>
+																  <a class="dropdown-item" href="#">Призначення</a>
+																  <a class="dropdown-item" href="#">Перерахунок</a>
+																  <a class="dropdown-item" href="#">Припинення</a>
 																</div>
 															</div>
 													</div>
