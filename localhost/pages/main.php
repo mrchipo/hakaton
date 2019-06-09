@@ -6,22 +6,22 @@
 						<div class="col-sm-3">
 							<div class="product">
 								<div class="product-img">
-									<a href="#"><img src="../image/zlochin.png" alt="Home"></a>
+									<a href="#"><img src="../image/dz.png" alt="Home"></a>
 								</div>
 								<p class="product-title">
-									<a href="#">Злочини</a>
+									<a href="#">Дозвіли</a>
 								</p>
-								<p class="product-desc">Протиправні дії проти громадянина</p>
+								<p class="product-desc">Дозвіли для громадян</p>
+								<br>
+								<br>
 								<div class="btn-group dropup">
 									<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									  Подробнее
 									</button>
 									<br>
 									<div style="margin-left: -25%; white-space: normal;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-									  <a class="dropdown-item" href="#">Проти власності</a>
-									  <a class="dropdown-item" href="#">Проти довкілля</a>
-									  <a class="dropdown-item" href="#">Проти правосуддя</a>
-									  <a class="dropdown-item" href="#">Військові злочини</a>
+									  <a class="dropdown-item" href="interactive_steps.php">Зброя</a>
+									  <a class="dropdown-item" href="#">Перевезення</a>
 									</div>
 								</div>
 							</div>
@@ -80,6 +80,7 @@
 											<a href="#">Неповнолітні</a>
 										</p>
 										<p class="product-desc">Відповідальності та покарання неповнолітніх</p>
+										<br>
 										<div class="btn-group dropup">
 												<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												  Подробнее
@@ -126,6 +127,7 @@
 															<a href="#">Аліменти</a>
 														</p>
 														<p class="product-desc">Аліменти на дітей</p>
+														<br>
 														<div class="btn-group dropup">
 																<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 																  Подробнее
