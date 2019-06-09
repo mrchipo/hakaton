@@ -1,3 +1,4 @@
+
 $( document ).ready(function() {
     var json = {
         title: "Оформлення ліцензії на зброю",
@@ -264,4 +265,5 @@ function addStepCheckBoxes(step, id) {
     interactiveContainer.append(checkbox);
     interactiveContainer.append(lbl);
     interactiveContainer.append('<br>');
+
 }

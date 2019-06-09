@@ -3,7 +3,7 @@ if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) || $_SERVER['HTTP_X_REQUESTED_WITH'
 
 if (empty($_POST['id'])) {exit();}
 
-$nameFile = 'poll-results.txt';
+$nameFile = './pages/poll-results.txt';
 
 $id = $_POST['id'];
 $answer = $_POST['poll'];
@@ -54,7 +54,7 @@ if (isset($_COOKIE['polls'])) {
   $arrayPolls = array();
 }
 array_push($arrayPolls,$id);
-setcookie('polls', implode(',',$arrayPolls),time() + (86400 * 365),'/');   
+setcookie('./pages/polls', implode(',',$arrayPolls),time() + (86400 * 365),'/');   
 
 $result[$id] = $answers;
 $result = json_encode($result);  
