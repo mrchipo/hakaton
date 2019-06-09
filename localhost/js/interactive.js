@@ -260,7 +260,7 @@ function addStepCheckBoxes(step, id, i) {
 
     var lbl;
     if ('hint' in step) {
-        lbl =  '<label for="' + id +'" id='+ i +' class="hintStep" onmouseout="showHint(this);" leaveHint="alert(this);">' + step.title + '</label>';
+        lbl =  '<label for="' + id +'" id='+ i +' class="hintStep" onclick="showAlert(this);">' + step.title + '</label>';
     } else {
         lbl =  '<label for="' + id +'">' + step.title + '</label>';
     }
@@ -271,14 +271,8 @@ function addStepCheckBoxes(step, id, i) {
 
 }
 
-function showHint(element) {
-    popup.css("display", "relative");
+function showAlert(element) {
     var id = element.id;
     var step = curStep[parseInt(id)];
-    popup.text(step.hint);
-}
-
-function leaveHint(element) {
-    popup.empty();
-    popup.css("display", "none");
+    alert(step.hint);
 }
