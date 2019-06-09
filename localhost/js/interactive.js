@@ -121,10 +121,6 @@ $( document ).ready(function() {
 
 });
 
-// function parseJson(json) {
-//     var obj = jQuery.parseJSON(json);
-//     $('#interactiveTitle').text(obj['title']);
-// }
 var prevIndexesList = [];
 var obj;
 var interactiveContainer = $("#interactiveContainer");
@@ -144,7 +140,6 @@ function fillInfo(json)
 }
 
 function parseNode(obj, index, prevIndexesList) {
-    console.log(obj, index);
     var node = obj.tree[index];
 
     handleBackBtnVisibility(prevIndexesList);
@@ -185,7 +180,6 @@ function fillQuestion(obj, currIndex) {
 
     var yesBtnElement = "<button class='btn' id='yesBtn'>" + "Так" + "</button>"
     interactiveContainer.append(yesBtnElement);
-
     /////////////////////////////////////////////////////
 
     $("#yesBtn").click(function() {
@@ -200,13 +194,30 @@ function fillQuestion(obj, currIndex) {
 
 function fillSelect(obj, currIndex) {
     //Fill card with html
+    var node = obj.tree[currIndex];
+
+    /////////////////////////////////////////////////////
     
-    /* inputDropDown.change(function(...) {
-        var selectedIndex = ...
-        prevIndexesList.push(currIndex)
-        parseNode(obj, currIndex + selectedIndex, prevIndexesList)
-        });
-    */
+    var question = "<p>" + node["question"] + "</p>"
+    interactiveContainer.append(question);
+    //Select
+    var s = $('<select id="select"/>');
+    var o = node.select_titles
+    for (var i in o) {
+        s.append($('<option/>').html(o[i]));
+    }
+
+    interactiveContainer.append(s);
+    //Ok button
+    var yesBtnElement = "<button class='btn' id='selectOkBtn'>" + "Ок" + "</button>"
+    interactiveContainer.append(yesBtnElement);
+     /////////////////////////////////////////////////////
+
+     $("#selectOkBtn").click(function () {
+        var selectedIndex = $("#select").prop('selectedIndex')
+        prevIndexesList.push(currIndex);
+        parseNode(obj, currIndex + selectedIndex + 1, prevIndexesList);
+     });
 }
 
 function fillFinalText(obj, currIndex) {
@@ -217,5 +228,34 @@ function fillFinalText(obj, currIndex) {
 
 function fillFinalSteps(obj, currIndex) {
     //Fill card with final steps
+    var node = obj.tree[currIndex];///////////////////
+
+    /////////////////////////////////////////////////////
+    var title = "<p>" + node["title"] + "</p>"
+    interactiveContainer.append(title);
     
+    interactiveContainer.append("<div  id='checkboxContainer'>");
+    for (var i = 0; i < node.steps.length; i++) {
+        interactiveContainer.append('<div class = "one-step" >');
+        addStepCheckBoxes(node.steps[i], "step" + i);
+        interactiveContainer.append('</div>');
+    }
+    interactiveContainer.append("</div>");
+    
+    /////////////////////////////////////////////////////
+}
+
+function addStepCheckBoxes(step, id) {
+    var checkbox =  $(document.createElement("input")).attr({
+        id:    id, 
+        name:  id,
+        value: "value",
+        type:  'checkbox',
+        checked:false
+    })
+
+    var lbl =  '<label for="' + id +'">' + step.title + '</label>';
+    interactiveContainer.append(checkbox);
+    interactiveContainer.append(lbl);
+    interactiveContainer.append('<br>');
 }

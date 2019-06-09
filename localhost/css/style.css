@@ -103,7 +103,6 @@ img {
 .interactive_block {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #c0c0c0;
-    height: 390px;
     overflow: hidden;
     padding: 25px 15px;
     text-align: center;
@@ -120,6 +119,24 @@ img {
 
 #backBtn {
     display: none;
+}
+
+label {
+    
+}
+input[type="checkbox"] {
+    
+}
+
+#checkboxContainer {
+    text-align: start;
+}
+#checkboxContainer label,  input[type="checkbox"] {
+    float: left;
+}
+
+.one-step {
+  
 }
 
 h1,h2,h3,h4 {font-family:'Open Sans Condensed',sans-serif; font-weight: normal; color: #333; margin: 20px 0}
