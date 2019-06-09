@@ -118,6 +118,41 @@ img {
   font-size: 200px;
 }
 
+
+#backBtn {
+    display: none;
+}
+
+label {
+    
+}
+input[type="checkbox"] {
+    
+}
+
+.hintStep {
+    color: #26e;
+}
+
+#checkboxContainer {
+    text-align: start;
+}
+#checkboxContainer label,  input[type="checkbox"] {
+    float: left;
+}
+
+.one-step {
+  
+}
+
+.popup {
+    display: none;
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+
+
 h1,h2,h3,h4 {font-family:'Open Sans Condensed',sans-serif; font-weight: normal; color: #333; margin: 20px 0}
 .blog_post {clear: both; padding: 15px 0; overflow:auto; margin-bottom: 20px; background:#FFF; box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4)}
 .blog_post h3 {margin-top:0}
