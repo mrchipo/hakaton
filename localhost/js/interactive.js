@@ -254,7 +254,13 @@ function addStepCheckBoxes(step, id) {
         checked:false
     })
 
-    var lbl =  '<label for="' + id +'">' + step.title + '</label>';
+    var lbl;
+    if ('hint' in step) {
+        lbl =  '<label for="' + id +'" class="hintStep">' + step.title + '</label>';
+    } else {
+        lbl =  '<label for="' + id +'">' + step.title + '</label>';
+    }
+
     interactiveContainer.append(checkbox);
     interactiveContainer.append(lbl);
     interactiveContainer.append('<br>');

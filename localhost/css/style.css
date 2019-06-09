@@ -128,6 +128,10 @@ input[type="checkbox"] {
     
 }
 
+.hintStep {
+    color: #26e;
+}
+
 #checkboxContainer {
     text-align: start;
 }
@@ -137,6 +141,13 @@ input[type="checkbox"] {
 
 .one-step {
   
+}
+
+.popup {
+    display: none;
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
 }
 
 h1,h2,h3,h4 {font-family:'Open Sans Condensed',sans-serif; font-weight: normal; color: #333; margin: 20px 0}

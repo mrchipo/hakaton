@@ -1,6 +1,7 @@
 <?php $title="Hakaton"; require("./shared/header.php"); ?>
     <div class="container content">
         <div class="col-sm-8 interactive_block"> 
+            <div class="popup">afsdf</div>
             <div class="progressContainer">
             </div>
             <p id="interactiveTitle">Title</p>
