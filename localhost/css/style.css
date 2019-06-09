@@ -100,7 +100,27 @@ img {
 
 
 
+.interactive_block {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #c0c0c0;
+    height: 390px;
+    overflow: hidden;
+    padding: 25px 15px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.circle:before {
+  content: ' \25CF';
+  font-size: 200px;
+}
+
+#backBtn {
+    display: none;
+}
 
 h1,h2,h3,h4 {font-family:'Open Sans Condensed',sans-serif; font-weight: normal; color: #333; margin: 20px 0}
 .blog_post {clear: both; padding: 15px 0; overflow:auto; margin-bottom: 20px; background:#FFF; box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4)}
