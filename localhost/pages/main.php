@@ -9,9 +9,9 @@
 									<a href="#"><img src="../image/dz.png" alt="Home"></a>
 								</div>
 								<p class="product-title">
-									<a href="#">Дозвіли</a>
+									<a href="#">Дозволи</a>
 								</p>
-								<p class="product-desc">Дозвіли для громадян</p>
+								<p class="product-desc">Дозволи для громадян</p>
 								<br>
 								<br>
 								<div class="btn-group dropup">
@@ -36,6 +36,7 @@
 										</p>
 										<p class="product-desc">Злочини у сфері господарської діяльності</p>
 										<div class="btn-group dropup">
+											<br>
 									<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									  Подробнее
 									</button>

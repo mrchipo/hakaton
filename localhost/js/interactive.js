@@ -129,6 +129,8 @@ var backBtn = $("#backBtn");
 backBtn.click(function() {
     backBtnClick(obj, prevIndexesList);
 });
+var popup = $("#popup");
+var curStep;
 
 function fillInfo(json)
 {
@@ -237,8 +239,9 @@ function fillFinalSteps(obj, currIndex) {
     
     interactiveContainer.append("<div  id='checkboxContainer'>");
     for (var i = 0; i < node.steps.length; i++) {
+        curStep = node.steps;
         interactiveContainer.append('<div class = "one-step" >');
-        addStepCheckBoxes(node.steps[i], "step" + i);
+        addStepCheckBoxes(node.steps[i], "step" + i, i);
         interactiveContainer.append('</div>');
     }
     interactiveContainer.append("</div>");
@@ -246,7 +249,7 @@ function fillFinalSteps(obj, currIndex) {
     /////////////////////////////////////////////////////
 }
 
-function addStepCheckBoxes(step, id) {
+function addStepCheckBoxes(step, id, i) {
     var checkbox =  $(document.createElement("input")).attr({
         id:    id, 
         name:  id,
@@ -257,7 +260,7 @@ function addStepCheckBoxes(step, id) {
 
     var lbl;
     if ('hint' in step) {
-        lbl =  '<label for="' + id +'" class="hintStep">' + step.title + '</label>';
+        lbl =  '<label for="' + id +'" id='+ i +' class="hintStep" onmouseout="showHint(this);" leaveHint="alert(this);">' + step.title + '</label>';
     } else {
         lbl =  '<label for="' + id +'">' + step.title + '</label>';
     }
@@ -266,4 +269,16 @@ function addStepCheckBoxes(step, id) {
     interactiveContainer.append(lbl);
     interactiveContainer.append('<br>');
 
+}
+
+function showHint(element) {
+    popup.css("display", "relative");
+    var id = element.id;
+    var step = curStep[parseInt(id)];
+    popup.text(step.hint);
+}
+
+function leaveHint(element) {
+    popup.empty();
+    popup.css("display", "none");
 }
